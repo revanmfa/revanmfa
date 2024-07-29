@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Revan MFA" />
+    <meta name="description" content="Contact Information" />
+    <title>Contact Us - LTS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome To The Little Taco Shop 🌮Hours🌮</h1>
+      <nav id="nav-bar">
+        <a href="hometacos.html">
+          HOME
+          <!--  <abbr title="the little taco shop"> LTS</abbr> -->
+        </a>
+
+        <a href="hometacos.html#menu">OUR MENU</a>
+
+        <a href="hours.html">ABOUT</a>
+
+        <a href="contact.html" class="active">CONTACT US</a>
+      </nav>
+    </header>
+    <br /><br /><br />
+
+    <div class="img-contact">
+      <figure class="img-3">
+        <img
+          src="img/tacos_and_drink_400x267.png"
+          alt="We Love Tacos!"
+          title="We Love Tacos"
+          width="400"
+          height="267" />
+        <figcaption>Tacos And Drink</figcaption>
+      </figure>
+
+      <figure class="img-4">
+        <img
+          src="img/tacos_close_up_400x260.png"
+          alt="Little Taco Shop Tacos"
+          title="Tacos Readdy To eat"
+          width="400"
+          height="260" />
+        <figcaption>Little Taco Shop Tacos</figcaption>
+      </figure>
+    </div>
+
+    <hr />
+    <main>
+      <!--Our content-->
+      <section>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send us a message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                required />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                email="email"
+                id="email"
+                placeholder="your email"
+                required />
+            </p>
+            <p>
+              <label for="Message">Your Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                row="10"
+                placeholder="Type your message here"></textarea>
+            </p>
+
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </section>
+      <br /><br /><br />
+
+      <div class="address">
+        <section>Our Location</section>
+        <address>
+          555 taco temtation lane , suite T <br />
+          Kansas City ,MO 55555-5555
+          <br /><br />
+          phone : <a href="tel:555555555">555-555-5555</a>
+        </address>
+      </div>
+      <br />
+      <p id="bttp">
+        <a href="#">Back To The Top</a>
+      </p>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p id="copyright">Copyright &copy; The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>

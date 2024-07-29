@@ -1,0 +1,189 @@
+html {
+  color: whitesmoke;
+  font-size: 22px;
+  background-image: url(../img/tacosbg2.png);
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+}
+
+/* all page */
+#nav-bar {
+  gap: 1rem;
+  justify-content: center;
+  display: flex;
+  position: sticky;
+  background-color: #000000;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+  border-radius: 10px;
+}
+#nav-bar a {
+  color: #f2f2f2;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+#nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#nav-bar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.img-home,
+.img-hours,
+.img-contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+body {
+  padding: 3%;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 10px 20px 0 rgba(22, 182, 121, 0.37);
+}
+
+h1 {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+  border-radius: 10px;
+}
+
+table {
+  border-spacing: 0.5rem;
+}
+
+th,
+td,
+caption {
+  background-color: #000000;
+  border: 2px solid #000000;
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: separate;
+  border-radius: 15px;
+  padding: 0.5rem;
+  text-align: center;
+  border-spacing: 5px;
+}
+
+#menu {
+  text-align: center;
+  color: #ddd;
+}
+.table-menu {
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  color: #04aa6d;
+}
+
+.main-text {
+  background-color: rgb(0, 0, 0);
+  text-align: justify;
+}
+#bttp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bttp a {
+  padding: 10px;
+  color: #ddd;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+}
+
+#bttp a:hover {
+  color: #ddd;
+  background-color: #04aa6d;
+}
+
+#copyright {
+  background-color: #000000;
+  text-align: center;
+}
+
+/* page hours */
+
+.image-hours {
+  text-align: center;
+}
+
+.open-time {
+  color: #04aa6d;
+  text-align: center;
+}
+
+/* contact us page */
+
+.img-contact {
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+}
+label {
+  color: #04aa6d;
+}
+
+input,
+textarea {
+  color: #ddd;
+  height: 20px;
+  width: 500px;
+  background-color: #000000;
+  border-radius: 7px;
+  text-align: left;
+  box-shadow: 0 2px 5px 0 rgba(15, 255, 163, 0.37);
+}
+
+button {
+  color: #04aa6d;
+  background-color: #000000;
+  box-shadow: 0 2px 5px 0 rgba(22, 182, 121, 0.37);
+  border-radius: 5px;
+}
+
+.address {
+  border-radius: 10px;
+  font-size: medium;
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(15, 255, 163, 0.37);
+}
