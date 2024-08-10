@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Holadok - Layanan Kesehatan Anda</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="scritp.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+AR:wght@100..400&display=swap"
-      rel="stylesheet" />
-  </head>
 
-  <header>
-    <div class="nav-bar">
-      <div class="nav-left">
-        <div class="logo">
-          <img src="/img/logo.svg" alt="logo" />
-          <span>Holadok</span>
-        </div>
-        <div class="main-nav">
-          <div>Home</div>
-          <div>Features</div>
-          <div>Blog</div>
-          <div>About Us</div>
-        </div>
-      </div>
-      <div class="side-nav">
-        <div>Login</div>
-        <button id="book">Book Now</button>
-      </div>
-    </div>
-  </header>
-  <body>
-    <div class="content">
-      <div class="content-1">
-        <div class="c1-h1">
-          <p>Get the healthcare your need, when you need it.</p>
-        </div>
+<head>
+  <title>Holadok - Layanan Kesehatan Anda</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scritp.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+AR:wght@100..400&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="c1-text">
-          <p>
-            Manage all of your healthcare needs in one convenient place - from
-            booking appointment to tracking your health history
-          </p>
-        </div>
-
-        <div>
-          <button id="appointment">Book an Appointment</button>
-        </div>
-      </div>
-      <section class="content-2">
-        <div class="pop-up">
-          <div class="user">
+<body>
+  <div class="container">
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+          <div class="nav-left">
             <div class="logo">
-              <img src="/img/profile.svg" alt="profile" />
+              <img src="/img/logo.svg" alt="logo" />
+              <span>Holadok</span>
             </div>
-
-            <div class="user-name">
-              <p>Jane Doe</p>
+            <div class="main-nav">
+              <div>Home</div>
+              <div>Features</div>
+              <div>Blog</div>
+              <div>About Us</div>
             </div>
           </div>
-
-          <div>
-            <img src="/img/kutip.svg" alt="kutip" />
+          <div class="side-nav">
+            <div>Login</div>
+            <button class="btn btn-secondary">Book Now</button>
           </div>
         </div>
-        <br />
-        <div>
-          <p>
-            "The doctor appointment app has been great for me . Scheduling
-            appointment and getting medication reminders is much easier, and i
-            love the option for virtual consultation. I'd recommend this app to
-            other."
-          </p>
-        </div>
-      </section>
+      </div>
+    </header>
+    <div class="content">
+      <div class="content-wrapper">
+        <h1 class="content-title">
+          Get the healthcare your need, when you need it.
+        </h1>
 
-      <section class="content-3">
-        <div><img src="/img/background.svg" alt="bg" /></div>
-      </section>
-      <section class="content-4">
-        <div><img src="/img/female.svg" alt="human" /></div>
-      </section>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="footer-1">
+        <p class="content-description">
+          Manage all of your healthcare needs in one convenient place - from
+          booking appointment to tracking your health history
+        </p>
+
+        <button id="appointment" class="btn btn-primary btn-lg">Book an Appointment</button>
+
+        <div class="popup">
+          <div class="popup-header">
+            <div class="user-card">
+              <div class="user-card-info">
+                <div class="user-card-avatar">
+                  <img src="/img/profile.svg" alt="profile" />
+                </div>
+
+                <div class="user-card-name">
+                  Jane Doe
+                </div>
+              </div>
+
+
+              <img src="/img/kutip.svg" alt="kutip" />
+            </div>
+
+          </div>
+          <div class="popup-body">
+            <p>
+              "The doctor appointment app has been great for me . Scheduling
+              appointment and getting medication reminders is much easier, and i
+              love the option for virtual consultation. I'd recommend this app to
+              other."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-footer">
+        <div class="content-footer-item">
           <div class="logo-footer1">
             <img src="/img/calender.svg" alt="cldr" />
           </div>
@@ -99,7 +93,7 @@
           </div>
         </div>
 
-        <div class="footer-2">
+        <div class="content-footer-item">
           <div class="logo-footer2">
             <img src="/img/bell.svg" alt="bell" />
           </div>
@@ -113,7 +107,7 @@
           </div>
         </div>
 
-        <div class="footer-3">
+        <div class="content-footer-item">
           <div class="logo-footer3">
             <img src="/img/map.svg" alt="map" />
           </div>
@@ -127,8 +121,16 @@
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="content-background">
+        <img src="/img/background.svg" class="img-background" alt="bg" />
+        <img src="/img/female.svg" class="img-person" alt="human" />
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
 </html>

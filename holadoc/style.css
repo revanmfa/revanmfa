@@ -5,39 +5,36 @@
 }
 
 html {
-  width: 100vh;
-  height: 1088px;
   font-family: "DM Sans", sans-serif;
 }
-body {
-  position: fixed;
-  width: 1;
-  margin-left: 150px;
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header,
 section {
   color: #101c45;
 }
-footer {
-  padding: 40px;
-  width: 1211px;
-  height: 191px;
-  font-size: 12px;
-  color: white;
-  background-color: #203271;
-}
+
 /* navbar */
 header {
-  margin-top: 58px;
+  z-index: 9999;
   color: #101c45;
   font-size: 18px;
-  width: 1140px;
-  height: 37px;
+  height: 60px;
   display: flex;
+  align-items: center;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .nav-bar {
+  margin: 0 auto;
   width: 100%;
   color: #101c45;
   display: flex;
@@ -70,135 +67,139 @@ header {
   gap: 2rem;
 }
 
-#book {
-  width: 100px;
-  height: 37px;
-  background-color: #9beae0;
-}
 section {
   color: #101c45;
   font-size: 18px;
 }
-footer {
-  margin-top: 100px;
-}
 
 /* content */
 .content {
+  padding-top: 60px;
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 /* content 1 */
-.content-1 {
-  margin-top: 146px;
+.content-wrapper {
+  height: 600px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-
-  width: 457px;
-  height: 391px;
 }
-.c1-h1 {
-  width: 457px;
+.content-title {
+  width: 100%;
+  max-width: 457px;
   height: 186px;
   font-size: 48px;
   color: #101c45;
 }
-.c1-text {
-  width: 457px;
-  height: 90px;
+.content-description {
+  max-width: 457px;
   font-size: 18px;
   color: #101c45;
+  margin-bottom: 24px;
 }
 
-#appointment {
+.content-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content-background .img-person {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+}
+
+/* Footer */
+.content-footer {
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-size: 12px;
   color: white;
   background-color: #203271;
-  width: 235px;
-  height: 60px;
+  height: 150px;
+  padding: 30px;
 }
-/*  content 2*/
-.content-2 {
-  padding: 12px;
 
-  font-size: 12px;
+.content-footer .content-footer-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+
+.btn-secondary {
+  background-color: 1px solid #9beae0;
+  border: 1px solid black;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #203271;
+  max-width: 270px;
+}
+
+.btn-lg {
+  padding: 25px 60px;
+}
+/*  popup2*/
+.popup {
+  position: absolute;
+  right: 30%;
+  top: 0px;
+  padding: 12px;
   background-color: white;
   margin-top: 118px;
   margin-left: 50px;
   width: 292px;
-  height: 182px;
   border-radius: 10px;
   box-shadow: 0 2px 10px 1px rgba(128, 128, 128, 0.466);
 }
-.pop-up {
+.popup-header {
   width: 252px;
   height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.user {
-  width: 70px;
-  height: 30px;
-  display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-}
-.user-name {
-  font-weight: bold;
-  padding-left: 10px;
-  width: 100px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-.content-3 {
-  top: 0px;
-  margin-top: 0;
-  margin-left: 620px;
-  display: block;
-  position: fixed;
-  justify-content: flex-end;
-  align-items: flex-end;
-  z-index: -2;
-}
-.content-4 {
-  z-index: -1;
-  margin-left: 664px;
-  display: block;
-  position: fixed;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.footer {
-  font-size: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 32px;
+  margin-bottom: 14px;
 }
 
-.footer-1 {
-  width: 294px;
-  height: 111px;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+.popup-body {
+  font-size: 12px;
 }
-.footer-2 {
-  width: 294px;
-  height: 111px;
+
+/* user card */
+
+.user-card {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 100%;
 }
-.footer-3 {
-  width: 294px;
-  height: 111px;
+
+.user-card-info {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+}
+.user-card-name {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 12px;
 }
